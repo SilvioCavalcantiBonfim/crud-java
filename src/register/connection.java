@@ -13,9 +13,9 @@ public class connection {
 	ResultSet rs;
 	CallableStatement call;
 	public void open() throws Exception{
-		String url = "jdbc:postgresql://localhost:5432/registers";
-		String usr = "postgres";
-		String pwd = "";
+		String url = "jdbc:postgresql://localhost:15432/registers";
+		String usr = "root";
+		String pwd = "root";
 		try {
 			Class.forName("org.postgresql.Driver");
 			con = DriverManager.getConnection(url,usr,pwd);
